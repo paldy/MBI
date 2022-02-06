@@ -12,7 +12,7 @@ fromline1 = re.findall(pattern, res_html.text)
 
 print(len(fromline1))
 
-set(fromline1) # убираю дубли в списке
+set(fromline1) # remove dublicates
 fromline1 = list(set(fromline1))
 fromline1.sort()
 print(*fromline1, sep='\n')
